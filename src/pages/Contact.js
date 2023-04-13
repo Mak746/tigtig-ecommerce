@@ -14,16 +14,16 @@ const Contact = () => {
         
           <div className="row">
             <div className="col-12">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6986.771103663534!2d76.99275607711007!3d28.886888929272477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390da5e51463d4c9%3A0xe5a485e2ac7c3d4a!2sMandaura%2C%20Haryana%20131103!5e0!3m2!1sen!2sin!4v1669909087902!5m2!1sen!2sin"
-              width="600"
-              height="450"
-              className="border-0 w-100"
-              allowFullScreen=""
-              loading="lazy"
-              title="This is a unique title" 
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.505502147241!2d38.77890347392354!3d9.017565589170072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85067b91b083%3A0x8d25ab6def0bd9d3!2sHayes%20Hotel%20Addis%20Ababa!5e0!3m2!1sen!2sde!4v1681397198945!5m2!1sen!2sde"
+             width="600" 
+             height="450" 
+             style="border:0;" 
+             allowfullscreen="" 
+             loading="lazy"
+             title="This is a unique title" 
+
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
 
           </div>
           <div className="col-12 mt-5">
