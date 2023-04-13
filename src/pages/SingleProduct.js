@@ -6,7 +6,6 @@ import { AiOutlineHeart } from "react-icons/ai";
 import ReactStars from "react-rating-stars-component";
 import ProductCard from '../components/ProductCard'
 import Color from '../components/Color'
-import watch from "../images/watch.jpg";
 import ReactImageZoom from 'react-image-zoom'
 import Container from '../components/Container';
 const SingleProduct = () => {
@@ -17,6 +16,7 @@ const SingleProduct = () => {
         img:"https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     }
     const [orderedProduct,setorderedProduct]=useState(true);
+
     const copyToClipboard = (text) => {
       console.log("text", text);
       var textField = document.createElement("textarea");
@@ -31,7 +31,10 @@ const SingleProduct = () => {
         <Meta title='Product Name'/>
       <BreadCrumb title='Product Name'/>
       <Container class1="main-product-wrapper py-5 home-wrapper-2">
-       
+      <button
+        type="button" hidden
+        onClick={() => setorderedProduct("blue")}
+      >Blue</button>
             <div className="row">
                 <div className="col-6">
                  <div className="main-product-image">
@@ -136,12 +139,12 @@ const SingleProduct = () => {
                 </div>
                 <div className="d-flex align-items-center gap-15">
                   <div>
-                    <a href="">
+                    <a href="/">
                       <TbGitCompare className="fs-5 me-2" /> Add to Compare
                     </a>
                   </div>
                   <div>
-                    <a href="">
+                    <a href="/">
                       <AiOutlineHeart className="fs-5 me-2" /> Add to Wishlist
                     </a>
                   </div>
@@ -157,7 +160,7 @@ const SingleProduct = () => {
                 <div className="d-flex gap-10 align-items-center my-3">
                   <h3 className="product-heading">Product Link:</h3>
                   <a
-                    href="javascript:void(0);"
+                    href="/"
                     onClick={() => {
                       copyToClipboard(
                         "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg"
@@ -232,7 +235,7 @@ const SingleProduct = () => {
                          {
                             orderedProduct && (
                                 <div>
-                                    <a className='text-dark text-decoration-underline' >Write a Review</a>
+                                    <a href='/' className='text-dark text-decoration-underline' >Write a Review</a>
                                 </div>
                             )
                          }
