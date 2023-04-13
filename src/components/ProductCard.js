@@ -17,14 +17,14 @@ const ProductCard = (props) => {
     <>
       <div
         className={` ${
-          location.pathname == "/product" ? `gr-${grid}` : "col-3"
+          location.pathname === "/product" ? `gr-${grid}` : "col-3"
         } `}
       >
         <Link
           to={`${
-            location.pathname == "/"
+            location.pathname === "/"
               ? "/product/:id"
-              : location.pathname == "/product/:id"
+              : location.pathname === "/product/:id"
               ? "/product/:id"
               : ":id"
           }`}
@@ -36,8 +36,8 @@ const ProductCard = (props) => {
             </button>
           </div>
           <div className="product-image">
-            <img src={watch} className="img-fluid" alt="product image" />
-            <img src={watch2} className="img-fluid" alt="product image" />
+            <img src={watch} className="img-fluid" alt="product watch" />
+            <img src={watch2} className="img-fluid" alt="product" />
           </div>
           <div className="product-details">
             <h6 className="brand">Havels</h6>
@@ -76,14 +76,14 @@ const ProductCard = (props) => {
       </div>
       <div
         className={` ${
-          location.pathname == "/product" ? `gr-${grid}` : "col-3"
+          location.pathname === "/product" ? `gr-${grid}` : "col-3"
         } `}
       >
         <Link
           to={`${
-            location.pathname == "/"
+            location.pathname === "/"
               ? "/product/:id"
-              : location.pathname == "/product/:id"
+              : location.pathname === "/product/:id"
               ? "/product/:id"
               : ":id"
           }`}
@@ -91,12 +91,12 @@ const ProductCard = (props) => {
         >
           <div className="wishlist-icon position-absolute">
             <button className="border-0 bg-transparent">
-              <img src={wish} alt="wishlist" />
+              <img src={wishlist} alt="wishlist" />
             </button>
           </div>
           <div className="product-image">
-            <img src={watch} className="img-fluid" alt="product image" />
-            <img src={watch2} className="img-fluid" alt="product image" />
+            <img src={watch} className="img-fluid" alt="product watch odd" />
+            <img src={watch2} className="img-fluid" alt="product watch even" />
           </div>
           <div className="product-details">
             <h6 className="brand">Havels</h6>
