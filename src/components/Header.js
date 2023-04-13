@@ -33,7 +33,7 @@ const Header = () => {
     <div className="container-xxl">
       <div className="row align-items-center">
         <div className="col-3">
-            <h2><Link className='text-white'>Edega Tigray</Link></h2>
+            <h2><Link className='text-white'>Edega Kadam</Link></h2>
         </div>
         <div className="col-4">
           <div className="input-group">
